@@ -76,10 +76,16 @@ const currYear = new Date().getFullYear();
 yearEl.textContent = currYear;
 
 // Make mobile navigation work
+const html = document.querySelector("html");
+const mainNav = document.querySelector(".main-nav");
+
 const headerEl = document.querySelector(".header");
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
+
+  // add transition on mobile menu
+  mainNav.classList.add("trans-5");
 });
 
 // Smooth scrolling animation

@@ -232,6 +232,10 @@ body {
   box-shadow: 0 0 0 0.6rem rgba(230, 125, 34, 0.326);
 }
 /* OTHERS */
+
+.trans-5 {
+  transition: all 0.5s ease-in;
+}
 .center-text {
   text-align: center;
 }
